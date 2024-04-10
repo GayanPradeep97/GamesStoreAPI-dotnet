@@ -1,0 +1,28 @@
+GET http://localhost:5203/games
+
+
+###
+GET http://localhost:5203/games/6
+
+
+###
+POST http://localhost:5203/games
+Content-Type: application/json
+{
+    "name": "Game of Thrones",
+    "genre": "Fantasy", 
+    "price": 19.99,
+    "releaseDate":"2011-11-18"
+       
+}
+
+###
+PUT http://localhost:5203/games/1
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II Turbo",
+    "genre": "Fighting",
+    "price": 29.99,
+    "releaseDate": "1992-07-15"
+}
